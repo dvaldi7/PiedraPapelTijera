@@ -1,5 +1,6 @@
 // opciones que pueden elegir el jugador y la máquina
 const opcionesJuego = ["piedra", "papel", "tijera"];
+
 // Daniel Valdivieso-M. //
 
 // elementos del HTML 
@@ -153,9 +154,9 @@ botonYa.addEventListener('click', () => {
             botonYa.disabled = true;
         }
     } else if (!nombreDelJugador || numeroDePartidas <= 0) {
-        alert("¡Oye! Necesitas decir tu nombre y cuántas veces quieres jugar.");
+        alert(" Escribe tu nombre y cuántas veces quieres jugar.");
     } else if (partidasQueSeHanJugado >= numeroDePartidas) {
-        alert("¡Ya se terminaron las partidas!");
+        alert("¡No quedan partidas! Please, Insert coin... (y vuelve a darle al botón)");
     } else if (!opcionElegidaPorJugador) {
         alert("¡Elige una opción para jugar!");
     }
